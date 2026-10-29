@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Luiguis Mansión embrujada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <header id="hud">
+      <span id="coins">Monedas 0/0</span>
+      <span id="mask">Máscara lista</span>
+    </header>
+
+    <div id="stage">
+      <canvas id="game" width="840" height="600"></canvas>
+
+      <div id="cover">
+        <div id="coverArt">
+          <img src="imagesPublic/PORTADA LUIGUIS.png" alt="Luigui´s in the Mansion Freddy: una noche para sobrevivir">
+          <button id="playBtn" aria-label="Jugar"></button>
+        </div>
+      </div>
+
+      <div id="overlay">
+        <h1 id="ovTitle">Elige tu dificultad</h1>
+        <p id="ovText">Junta todas las monedas y escapa por la puerta verde. Algo te persigue en la oscuridad. Toca una máscara en la pared para ver por sus ojos.</p>
+        <div id="levels">
+          <button data-d="facil">Fácil (6 monedas)</button>
+          <button data-d="normal">Normal (12 monedas)</button>
+          <button data-d="dificil">Difícil (20 monedas)</button>
+        </div>
+        <p id="ovHelp">Mueve con WASD o las flechas. En iPhone usa el joystick.</p>
+      </div>
+
+      <div id="stick"><div id="knob"></div></div>
+    </div>
+  </main>
+  <script src="mecanica.js"></script>
+</body>
+</html>
